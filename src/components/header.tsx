@@ -5,10 +5,11 @@ import {Link, navigate} from 'gatsby';
 import { Avatar, ClickAwayListener, Grow, MenuItem, MenuList, Paper, Popper } from '@material-ui/core';
 import { useSelector,useDispatch } from 'react-redux';
 import { signout } from './statemanagement/Statemanagement'
+import { stateType } from '../types/Types';
 
-const Header = ({activeNow}) => {
+const Header:React.FC<string> = (activeNow) => {
   const [trigger, settrigger] = useState(false);
-  const Data = useSelector((state) => state.loginSlice.data)
+  const Data = useSelector((state:stateType) => state.loginSlice.data)
   console.log("from header data id => ",Data)
 const dispatch = useDispatch()
   const [open, setOpen] = React.useState(false);

@@ -7,25 +7,10 @@ import './Index.css';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 
-const Signup = () => {
-const [showPassword, setshowPassword] = useState(false);
+const Signup:React.FC = () => {
+const [showPassword, setshowPassword] = useState(true);
 const [DisplayError, setDisplayError] = useState(true);
 
-// const SignUpToFuanadb = (data) =>{
-//     useEffect((data) => {
-//       const d=async(data)=>{
-//           const res = await fetch(`./netlify/functions/signup`,
-//           {
-//               method:"POST",
-//               body:JSON.stringify(data)
-//           }
-//           )
-//           const  result = await res.json();
-//           return result
-//       };
-//       d(data)
-//     }, [])
-// }
     return (
         <Formik
             initialValues={{
@@ -90,7 +75,6 @@ const [DisplayError, setDisplayError] = useState(true);
                 <ErrorMessage name="password" >{msg => (<span style={{ color: "red", fontSize: "13px" }}>{msg}</span>)}</ErrorMessage><br />
                 
                 <br /><br /><br />
-                {/* <Button variant="contained" disabled> Back</Button>&nbsp;&nbsp; */}
          <Button style={{left:"0%"}} type="submit" variant="contained" color="primary"> Next</Button>
             </Form></div>
         </Formik>

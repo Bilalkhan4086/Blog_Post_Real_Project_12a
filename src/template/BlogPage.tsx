@@ -5,11 +5,12 @@ import Layout from '../components/Layout'
 import { Button } from '@material-ui/core'
 import { navigate } from 'gatsby-link'
 import { useSelector} from 'react-redux'
+import { pageContextTypes, stateType } from '../types/Types'
 
 
-const Arabian = ({pageContext}) => {
+const Arabian:React.FC<pageContextTypes> = ({pageContext}) => {
 // const [Signup, setSignup] = useState(false) ;
-const loginStatus = useSelector((state) => state.loginSlice.login)
+const loginStatus = useSelector((state:stateType) => state.loginSlice.login)
 
     return (
       <Layout active={pageContext.active}><div className="BackGround">

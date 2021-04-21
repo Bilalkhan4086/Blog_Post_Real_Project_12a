@@ -2,9 +2,10 @@ import { Avatar, Button } from '@material-ui/core';
 import { navigate } from 'gatsby-link';
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { stateType } from '../types/Types';
 
-const Profile = () => {
-    const Data = useSelector((state) => state.loginSlice.data)
+const Profile:React.FC = () => {
+    const Data = useSelector((state:stateType) => state.loginSlice.data)
     return (
         <div>
             <Avatar style={{ color: "rgb(4, 101, 114)", fontWeight: "bolder", fontSize: "100px", margin: 'auto', marginBottom: '7%', width: "150px", height: "150px" }}>

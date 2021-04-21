@@ -1,6 +1,6 @@
 import React from 'react'
 import Signup from '../components/signup'
-const Auth = () => {
+const Auth:React.FC = () => {
     return (
         <div>
             <Signup/>

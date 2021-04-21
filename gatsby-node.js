@@ -37,7 +37,7 @@ Statedata.push(data)
     return(   actions.createPage(
     {
         path: page,
-        component: require.resolve(`./src/template/BlogPage.js`),
+        component: require.resolve(`./src/template/BlogPage.tsx`),
         context: { 
             // Data passed to context is available
             // in pageContext props of the template component

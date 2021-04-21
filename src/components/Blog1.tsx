@@ -1,8 +1,10 @@
 import React from 'react'
 import './index.css'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import { BlogsTypes } from '../types/Types'
+import moment from 'moment';
 
-const Blog1 = ({count,data}) => {
+const Blog1:React.FC<BlogsTypes> = ({count,data}) => {
 // const blog = Data.allContentfulBlogPost.edges.node;
 console.log("Imade =",count)
 const blogcontent = documentToReactComponents(JSON.parse(data.node.description.raw));
@@ -17,7 +19,7 @@ const blogcontent = documentToReactComponents(JSON.parse(data.node.description.r
            
             </div><br/>
             <img src={data.node.image.file.url} alt="akaa" className="BlogImage" />
-            <br/><div style={{fontFamily:'Pangolin'}}>Publish date : {Date(data.node.pubishDate)}</div>
+            <br/><div style={{fontFamily:'Pangolin'}}>Publish date : {data.node.pubishDate}</div>
 
    </div>
     )

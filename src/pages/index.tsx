@@ -4,7 +4,7 @@ import * as React from "react"
 import "../components/Index.css";
 import Layout from "../components/Layout";
 
-const IndexPage = () => {
+const IndexPage:React.FC = () => {
 
 
    return (
