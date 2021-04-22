@@ -294,7 +294,7 @@ cursor: pointer;
 }
 .Blog1Desc{
     font-size: 25px;
-    font-style: italic;
+    font-weight: bolder;
     font-family: 'Montserrat','Pangolin', Courier, monospace;
     color: rgb(60, 62, 63);
     width: 100%;
