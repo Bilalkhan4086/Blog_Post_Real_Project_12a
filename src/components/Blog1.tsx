@@ -10,16 +10,14 @@ console.log("Imade =",count)
 const blogcontent = documentToReactComponents(JSON.parse(data.node.description.raw));
     return (
         <div style={{textAlign:"left"}}>
-            <h2 className="Blog1Header">{count+1} . {data.node.blogTitle}</h2>
+            <h2 className="Blog1Header">  {data.node.blogTitle}</h2>
             <div className="Blog1Desc">
-               
-                        
+                
                 {blogcontent}
         
-           
             </div><br/>
             <img src={data.node.image.file.url} alt="akaa" className="BlogImage" />
-            <br/><div style={{fontFamily:'Pangolin'}}>Publish date : {data.node.pubishDate}</div>
+            <br/><div style={{fontFamily:'Pangolin'}}>Publish date : {Date(data.node.pubishDate)}</div>
 
    </div>
     )
