@@ -9,7 +9,7 @@ const Profile:React.FC = () => {
     return (
         <div>
             <Avatar style={{ color: "rgb(4, 101, 114)", fontWeight: "bolder", fontSize: "100px", margin: 'auto', marginBottom: '7%', width: "150px", height: "150px" }}>
-                {Data ? Data.name.charAt(0) : ''}
+                {Data === undefined ? '' : Data.name.charAt(0)}
             </Avatar>
 
             <div style={{ textAlign: "center", margin: "0px 20%", color: "rgb(4, 101, 114)" }}>
