@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/index.css'
+import '../components/style.css'
 import Blog1 from '../components/Blog1'
 import Layout from '../components/Layout'
 import { Button } from '@material-ui/core'

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Index.css';
+import './style.css';
 import i from '../images/list.svg';
 import {Link, navigate} from 'gatsby';
 import { Avatar, ClickAwayListener, Grow, MenuItem, MenuList, Paper, Popper } from '@material-ui/core';

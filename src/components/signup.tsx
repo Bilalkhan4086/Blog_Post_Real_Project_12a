@@ -3,7 +3,7 @@ import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { navigate } from 'gatsby-link';
 import React, { useState } from 'react'
 import * as Yup from 'yup';
-import './Index.css';
+import './style.css';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 

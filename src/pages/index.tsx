@@ -1,7 +1,7 @@
 import { Button } from "@material-ui/core";
 import { navigate } from "gatsby-link";
 import * as React from "react"
-import "../components/Index.css";
+import "../components/style.css";
 import Layout from "../components/Layout";
 
 const IndexPage:React.FC = () => {
