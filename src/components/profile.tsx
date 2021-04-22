@@ -12,7 +12,7 @@ const Profile:React.FC = () => {
                 {Data === undefined ? '' : Data.name.charAt(0)}
             </Avatar>
 
-            <div style={{ textAlign: "center", margin: "0px 20%", color: "rgb(4, 101, 114)" }}>
+            <div style={{ textAlign: "center", margin: "0px 20%", color: "rgb(4, 101, 114)"}}>
                 <div style={{ display: "flex", justifyContent: 'space-between' }}>
                     <h2>Name</h2>
                     <h2>{Data.name}</h2>
